@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context=".LiveDataActivity"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp">
+
+        <ImageView
+            android:id="@+id/btn_connection"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@drawable/ic_action_portable_wifi_off" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="LIVE DATA"
+            android:textColor="@color/button_text_color"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="30dp">
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="22dp"
+            android:text="Boost"
+            android:textColor="@color/button_text_color"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv_boost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_toStartOf="@+id/textView3"
+            android:text="0"
+            android:textColor="@color/button_text_color"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_toEndOf="@+id/textView4"
+            android:paddingBottom="4dp"
+            android:paddingLeft="4dp"
+            android:text="psi"
+            android:textColor="@color/button_text_color" />
+
+        <TextView
+            android:id="@+id/tv_egt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView2"
+            android:layout_below="@+id/textView2"
+            android:text="0"
+            android:textColor="@color/button_text_color"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_marginStart="-60dp"
+            android:layout_toEndOf="@+id/textView2"
+            android:paddingBottom="4dp"
+            android:paddingLeft="4dp"
+            android:text="*F"
+            android:textColor="@color/button_text_color" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/textView4"
+            android:layout_marginEnd="60dp"
+            android:text="EGT"
+            android:textColor="@color/button_text_color"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="116dp"
+            android:layout_toStartOf="@+id/textView3"
+            android:text="Fule rate"
+            android:textColor="@color/button_text_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView11"
+            android:layout_alignStart="@+id/textView3"
+            android:paddingBottom="4dp"
+            android:paddingLeft="4dp"
+            android:text="mm3"
+            android:textColor="@color/button_text_color"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_fule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView11"
+            android:layout_toStartOf="@+id/textView3"
+            android:text="0"
+            android:textColor="@color/button_text_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView12"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="175dp"
+            android:text="Oil Pressure "
+            android:textColor="@color/button_text_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView11"
+            android:layout_toEndOf="@+id/textView14"
+            android:paddingBottom="4dp"
+            android:paddingLeft="4dp"
+            android:text="psi"
+            android:textColor="@color/button_text_color"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_oil_pressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView14"
+            android:layout_below="@+id/textView11"
+            android:text="0"
+            android:textColor="@color/button_text_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/textView11"
+            android:layout_marginEnd="170dp"
+            android:text="Turbo Vanes"
+            android:textColor="@color/button_text_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView11"
+            android:layout_marginStart="-171dp"
+            android:layout_toEndOf="@+id/textView17"
+            android:paddingBottom="4dp"
+            android:paddingLeft="4dp"
+            android:text="%"
+            android:textColor="@color/button_text_color"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_turbo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView17"
+            android:layout_below="@+id/textView12"
+            android:text="0"
+            android:textColor="@color/button_text_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/tv_egt"
+            android:layout_alignTop="@+id/textView11"
+            android:text="d-FRP"
+            android:textColor="@color/button_text_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView11"
+            android:layout_toEndOf="@+id/textView19"
+            android:paddingBottom="4dp"
+            android:paddingLeft="4dp"
+            android:text="psi"
+            android:textColor="@color/button_text_color"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_dfrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView19"
+            android:layout_below="@+id/textView11"
+            android:text="0"
+            android:textColor="@color/button_text_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView4"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="128dp"
+            android:text="Timing"
+            android:textColor="@color/button_text_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView7"
+            android:layout_toEndOf="@+id/textView4"
+            android:paddingBottom="4dp"
+            android:paddingLeft="4dp"
+            android:text="*"
+            android:textColor="@color/button_text_color"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_timing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView4"
+            android:layout_below="@+id/textView7"
+            android:layout_marginTop="-128dp"
+            android:text="0"
+            android:textColor="@color/button_text_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView14"
+            android:layout_alignTop="@+id/textView7"
+            android:text="Coolant"
+            android:textColor="@color/button_text_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView7"
+            android:layout_toEndOf="@+id/textView14"
+            android:paddingBottom="4dp"
+            android:paddingLeft="4dp"
+            android:text="*F"
+            android:textColor="@color/button_text_color"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_coolant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView14"
+            android:layout_below="@+id/textView7"
+            android:layout_marginTop="-128dp"
+            android:text="0"
+            android:textColor="@color/button_text_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView17"
+            android:layout_alignTop="@+id/textView7"
+            android:text="Gear"
+            android:textColor="@color/button_text_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_gear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView17"
+            android:layout_below="@+id/textView7"
+            android:layout_marginTop="-128dp"
+            android:text="0"
+            android:textColor="@color/button_text_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/tv_egt"
+            android:layout_alignTop="@+id/textView7"
+            android:text="a-FRP"
+            android:textColor="@color/button_text_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView7"
+            android:layout_toEndOf="@+id/tv_egt"
+            android:paddingBottom="4dp"
+            android:paddingLeft="4dp"
+            android:text="psi"
+            android:textColor="@color/button_text_color"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_afrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/tv_egt"
+            android:layout_below="@+id/textView7"
+            android:layout_marginTop="-128dp"
+            android:text="0"
+            android:textColor="@color/button_text_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_tune"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="18dp"
+            android:layout_marginEnd="18dp"
+            android:text="Tune :"
+            android:textColor="@color/button_text_color"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/btn_info"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="18dp"
+            android:layout_marginStart="18dp"
+            app:srcCompat="@drawable/ic_action_info_red" />
+
+    </RelativeLayout>
+
+</FrameLayout>

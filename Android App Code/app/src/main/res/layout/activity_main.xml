@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_tune"
+        android:layout_width="381dp"
+        android:layout_height="68dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="137dp"
+        android:background="@drawable/tuneswitchingbutton" />
+
+    <Button
+        android:id="@+id/btn_live_data"
+        android:layout_width="381dp"
+        android:layout_height="68dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="61dp"
+        android:background="@drawable/livedatabutton" />
+
+    <Button
+        android:id="@+id/btn_config"
+        android:layout_width="381dp"
+        android:layout_height="68dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btn_tune"
+        android:background="@drawable/configurationbutton" />
+
+    <Button
+        android:id="@+id/btn_diag"
+        android:layout_width="381dp"
+        android:layout_height="68dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btn_live_data"
+        android:background="@drawable/diagnosticsbutton" />
+
+    <ImageView
+        android:id="@+id/btn_connection"
+        android:layout_width="71dp"
+        android:layout_height="47dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="13dp"
+        android:layout_marginTop="0dp"
+        app:srcCompat="@drawable/wificonnected" />
+
+    <ImageView
+        android:id="@+id/btn_info"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="11dp"
+        android:layout_marginStart="11dp"
+        app:srcCompat="@drawable/helpbutton" />
+
+
+</RelativeLayout>

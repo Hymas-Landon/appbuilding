@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".TuneActivity">
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="223dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btn_connection"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorOrange"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="TUNE 1" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="223dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btn1"
+        android:layout_marginTop="84dp"
+        android:background="@color/colorOrange"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="TUNE 2" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="223dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btn1"
+        android:layout_marginTop="142dp"
+        android:background="@color/colorOrange"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="TUNE 3" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="223dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btn1"
+        android:layout_marginBottom="113dp"
+        android:background="@color/colorOrange"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="TUNE 4" />
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="223dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_info"
+        android:layout_alignStart="@+id/btn1"
+        android:background="@color/colorOrange"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="TUNE 5" />
+
+    <ImageView
+        android:id="@+id/btn_connection"
+        android:layout_width="71dp"
+        android:layout_height="47dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="13dp"
+        android:layout_marginTop="0dp"
+        app:srcCompat="@drawable/wificonnected" />
+
+    <ImageView
+        android:id="@+id/btn_info"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="11dp"
+        android:layout_marginStart="11dp"
+        app:srcCompat="@drawable/helpbutton" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="392dp"
+        android:layout_height="205dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:text="Tune Selection"
+        android:textAlignment="center"
+        android:textColor="#b3b3b3"
+        android:textSize="80dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
